@@ -9,21 +9,21 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="249dp"
-        android:layout_height="64dp"
+        android:layout_height="66dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginBottom="408dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="jumpToLoginIng"
         android:text="會員登入"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        android:onClick="jumpToScreenThree"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button4"
@@ -35,14 +35,31 @@
         android:layout_marginEnd="68dp"
         android:layout_marginRight="68dp"
         android:layout_marginBottom="340dp"
+        android:onClick="jumpToLoginSet"
         android:text="加入會員"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        android:onClick="jumpToLoginSet"
-        />
+        app:layout_constraintVertical_bias="0.917" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.331"
+        app:srcCompat="@drawable/ic_sport_record" />
 
 </android.support.constraint.ConstraintLayout>

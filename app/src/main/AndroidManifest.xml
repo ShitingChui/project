@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login_ing"></activity>
+        <activity android:name=".profile_edit"></activity>
+        <activity android:name=".profile" />
+        <activity android:name=".reporter" />
+        <activity android:name=".diet_recorder" />
+        <activity android:name=".sport_suggestion" />
+        <activity android:name=".Main_menu" />
+        <activity android:name=".login_ing" />
         <activity android:name=".start_sport" />
         <activity android:name=".stop_sport" />
         <activity android:name=".login_set" />
@@ -21,7 +27,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity_third" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

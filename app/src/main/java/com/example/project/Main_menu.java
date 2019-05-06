@@ -5,15 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class login_ing extends AppCompatActivity {
+public class Main_menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_ing);
+        setContentView(R.layout.activity_main_menu);
     }
-    public void jumpToMainMenu(View v){
-        Intent i = new Intent(this,Main_menu.class);
+
+    public void jumpToStartSport(View v){
+        Intent i = new Intent(this, start_sport.class);
         startActivity(i);
     }
+
 }

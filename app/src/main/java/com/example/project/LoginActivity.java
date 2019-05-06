@@ -13,7 +13,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void jumpToScreenThree(View v){
+    public void jumpToLoginIng(View v){
         Intent i = new Intent(this,login_ing.class);
         startActivity(i);
     }

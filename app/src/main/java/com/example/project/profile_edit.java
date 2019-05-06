@@ -5,19 +5,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class login_set extends AppCompatActivity {
+public class profile_edit extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_set);
+        setContentView(R.layout.activity_profile_edit);
     }
-    public void jumpToLoginIng(View v){
-        Intent i = new Intent(this,login_ing.class);
+
+    public void jumpToProfileFirst(View v){
+        Intent i = new Intent(this,profile.class);
         startActivity(i);
     }
-    public void jumpToLogin(View v){
-        Intent i = new Intent(this,LoginActivity.class);
+
+    public void jumpToProfileSecond(View v){
+        Intent i = new Intent(this,profile.class);
         startActivity(i);
     }
+
 }
